@@ -67,5 +67,10 @@ demo-django/
 <img src="imagens/mensagens.png" width="850">
 
 ---
+### Página Sobre
+
+<img src="imagens/sobre.png" width="850">
+
+---
 
 Desenvolvido por **Esteban Alfaro**.
