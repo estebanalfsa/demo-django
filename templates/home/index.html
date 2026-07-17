@@ -6,7 +6,7 @@
     <title>Demo Django + Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900 ...">
+<body class="bg-gradient-to-r from-slate-500 to-slate-800">
 
     <header class="container mx-auto px-6 py-12">
         <nav class="flex items-center justify-between">
@@ -20,6 +20,13 @@
     </header>
 
     <main class="container mx-auto px-6 py-12">
+        {% if messages %}
+        {% for message in messages %}
+            <div class="max-w-3xl mb-6 px-4 py-3 rounded-lg bg-emerald-500/20 text-emerald-200 text-sm">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% endif %}
         <section class="max-w-3xl">
             <span class="inline-block px-3 py-1 bg-indigo-500/20 text-indigo-300 text-xs font-medium rounded-full mb-6">
                 Aula de Programação Web
@@ -57,6 +64,9 @@
             <p class="text-slate-400 text-sm mb-6">
                 Os itens abaixo são lidos do SQLite. Adicione novos pelo
                 <a href="/admin/" class="text-indigo-300 underline hover:text-indigo-200">painel admin</a>.
+                <a href="/nova/" class="inline-block mb-6 px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold transition">
+                    + Nova mensagem
+                </a>
             </p>
 
             {% if mensagens %}
@@ -81,6 +91,13 @@
                     {% endif %}
                     <span class="text-xs text-slate-400">por {{ m.autor }}</span>
                     <span class="text-xs text-slate-500">{{ m.criada_em|date:"d/m/Y H:i" }}</span>
+                    
+                    <div class="flex gap-3 mt-1">                                            {# ← novo #}
+                        <a href="{% url 'editar_mensagem' m.id %}"
+                        class="text-xs text-indigo-300 hover:text-indigo-200 underline">editar</a>
+                        <a href="{% url 'remover_mensagem' m.id %}"
+                        class="text-xs text-red-400 hover:text-red-300 underline">remover</a>
+                    </div> 
                 </li>
                     {% endfor %}
                 </ul>

@@ -56,21 +56,32 @@ demo-django/
 
 ### Página Inicial
 
-<img src="imagens/home.png" width="850">
+<img src="imagens/homeACTUAL.png" width="850">
 
-### Painel Administrativo
+### Página Nova
 
-<img src="imagens/admin.png" width="850">
+<img src="imagens/mensagensN.png" width="850">
 
-### Lista de Mensagens
+### Página Mensagens
 
-<img src="imagens/mensagens.png" width="850">
+<img src="imagens/Mensagens_novo.png" width="850">
 
----
+### Página Editar Mensagens
+
+<img src="imagens/editar.png" width="850">
+
+### Página Remover Mensagens
+
+<img src="imagens/delete.png" width="850">
+<img src="imagens/removecomplete.png" width="850">
+
+### Retorno Visual 
+
+<img src="imagens/retorno_visual.png" width="850">
+
 ### Página Sobre
 
 <img src="imagens/sobre.png" width="850">
 
----
 
 Desenvolvido por **Esteban Alfaro**.
