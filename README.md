@@ -74,11 +74,10 @@ demo-django/
 ### Retorno Visual 
 
 <img src="imagens/retorno_visual.png" width="850">
----
+
 ### Página Sobre
 
 <img src="imagens/sobre.png" width="850">
 
----
 
 Desenvolvido por **Esteban Alfaro**.
