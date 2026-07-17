@@ -56,7 +56,7 @@ demo-django/
 
 ### Página Inicial
 
-<img src="imagens/home.png" width="850">
+<img src="imagens/home5.png" width="850">
 
 ### Painel Administrativo
 
@@ -64,7 +64,7 @@ demo-django/
 
 ### Página Nova
 
-<img src="imagens/mensagens.png" width="850">
+<img src="imagens/mensagensN.png" width="850">
 
 ### Página Mensagens
 
