@@ -56,11 +56,7 @@ demo-django/
 
 ### Página Inicial
 
-<img src="imagens/home5.png" width="850">
-
-### Painel Administrativo
-
-<img src="imagens/admin.png" width="850">
+<img src="imagens/homeACTUAL.png" width="850">
 
 ### Página Nova
 
@@ -70,6 +66,14 @@ demo-django/
 
 <img src="imagens/Mensagens_novo.png" width="850">
 
+### Página Editar Mensagens
+
+<img src="imagens/editar.png" width="850">
+
+### Página Remover Mensagens
+
+<img src="imagens/delete.png" width="850">
+<img src="imagens/removecomplete.png" width="850">
 
 ### Retorno Visual 
 

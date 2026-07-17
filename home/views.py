@@ -1,10 +1,9 @@
-from django.shortcuts import redirect, render, get_object_or_404
+from django.contrib import messages
+from django.shortcuts import get_object_or_404, redirect, render
 from django.utils.text import slugify
 
 from .forms import MensagemForm
 from .models import Mensagem, Tag
-from django.contrib import messages
-
 
 def _aplicar_tags(mensagem, tags_texto):
     """Substitui as tags da mensagem pelas que vieram do formulário."""
@@ -57,3 +56,13 @@ def editar_mensagem(request, id):
         form = MensagemForm(instance=mensagem, initial={"tags": tags_atuais})
 
     return render(request, "home/editar.html", {"form": form, "mensagem": mensagem})
+
+def remover_mensagem(request, id):
+    mensagem = get_object_or_404(Mensagem, id=id)
+
+    if request.method == "POST":
+        mensagem.delete()
+        messages.success(request, "Mensagem removida.")
+        return redirect("index")
+
+    return render(request, "home/remover.html", {"mensagem": mensagem})
