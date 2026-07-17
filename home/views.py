@@ -3,6 +3,7 @@ from django.utils.text import slugify
 
 from .forms import MensagemForm
 from .models import Mensagem, Tag
+from django.contrib import messages
 
 
 def index(request):
@@ -29,6 +30,8 @@ def nova_mensagem(request):
                     tag, _ = Tag.objects.get_or_create(nome=nome)
                     mensagem.tags.add(tag)
 
+            messages.success(request, "Mensagem publicada com sucesso!") # Retorno visual
+        
             # 3. Redireciona para a página inicial (padrão Post/Redirect/Get).
             return redirect("index")
     else:

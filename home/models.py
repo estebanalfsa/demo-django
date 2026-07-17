@@ -32,7 +32,7 @@ class Mensagem(models.Model):
         blank=True,
         related_name="mensagens",
     )
-    tags = models.ManyToManyField(                              # ← novo campo
+    tags = models.ManyToManyField(                             
         Tag,
         blank=True,
         related_name="mensagens",

@@ -62,10 +62,18 @@ demo-django/
 
 <img src="imagens/admin.png" width="850">
 
-### Lista de Mensagens
+### Página Nova
 
 <img src="imagens/mensagens.png" width="850">
 
+### Página Mensagens
+
+<img src="imagens/Mensagens_novo.png" width="850">
+
+
+### Retorno Visual 
+
+<img src="imagens/retorno_visual.png" width="850">
 ---
 ### Página Sobre
 
